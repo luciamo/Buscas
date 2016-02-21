@@ -39,6 +39,7 @@ int main(int argc, char * argv[])
 	{
 		cout << "Digite o tamanho do vetor, o limite inferior e o superior: ";
 		cin >> vetorSize >> limitInf >> limitSup;
+		cout << endl;
 	}
 	
 	ofstream outputFile; // Stream object to handle the output file.
@@ -60,4 +61,5 @@ int main(int argc, char * argv[])
 		outputFile << vetor[j] << " ";
 	}
 	outputFile.close();
+	cout << "Vetor gerado e salvo em: '../data/randomvetor.in'" << endl;
 }
